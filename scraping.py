@@ -18,7 +18,7 @@ def scrape_all():
 
     # Run all scraping functions and store results in dict
     data = {'news_title': news_title, 'news_paragraph': news_paragraph, 'featured image': featured_image(browser),
-            'facts': mars_facts(), 'last_modified': dt.datetime.now}
+            'facts': mars_facts(), 'last_modified': dt.datetime.now()}
     
     # stop webdriver and return data
     browser.quit()
