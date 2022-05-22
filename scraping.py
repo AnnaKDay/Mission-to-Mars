@@ -62,9 +62,6 @@ def featured_image(browser):
     # setting up the visit URL
     url = 'https://spaceimages-mars.com'
     browser.visit(url)
-    #browser.is_element_present_by_css('div.list_text', wait_time=1)
-    # cant connect to server, will not troubleshoot and solve right now
-    # will ask dad to help understand what this means
 
     try:
 
