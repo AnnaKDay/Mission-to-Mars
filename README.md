@@ -1,6 +1,8 @@
 # Mission-to-Mars
 analysis with webscraping and MongoDB
 
+- This project was conducted to scrape data from different websites about Mars and build an easily viewable snapshot of the latest Mars news accompanied by images of Mars and some cursory facts. The end product is intended to be an app.
+
 
 ## Bootstrap Styles Added to index.html
 ![size_change](https://user-images.githubusercontent.com/100614266/169723897-be988680-957f-40d0-bfad-5183a3baa346.png)
