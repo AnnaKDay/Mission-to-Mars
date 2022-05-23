@@ -11,12 +11,12 @@
     />
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <!-- Add Jumbotron to Header -->
-      <div class="jumbotron text-center">
-        <h1>Mission to Mars</h1>
+      <div class="jumbotron customjumbotron">
+        <h1 style="color:white;">Mission to Mars</h1>
         <!-- Add a button to activate scraping script -->
-        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+        <p><a class="btn btn-warning btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
       </div>
 
       <!-- Add section for Mars News -->
@@ -44,12 +44,12 @@
             alt="Responsive image"
           />
         </div>
-
-        <div class="col-md-4">
+  
           <!-- Mars Facts -->
           <div class="row" id="mars-facts">
-            <h4>Mars Facts</h4>
-            {{ mars.facts | safe }}
+            <div class="col-xs-12 col-md-4">
+              <h4>Mars Facts</h4>
+              {{ mars.facts | safe }}
           </div>
         </div>
       </div>
@@ -74,3 +74,48 @@
     </div>
   </body>
 </html>
+<!--https://stackoverflow.com/questions/43194559/how-to-replace-bootstrap-jumbotron-image-with-a-background-colour-->>
+<style type="text/css">
+  /*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+  /*==========  Mobile First Method  ==========*/
+
+  /* Custom, iPhone Retina */ 
+  @media only screen and (min-width : 320px) {
+      .customjumbotron{
+        background-image: url('https://www.libraryvisit.org/wp-content/uploads/2021/02/Mars-planet-space.jpeg');
+      }
+  }
+
+  /* Extra Small Devices, Phones */ 
+  @media only screen and (min-width : 480px) {
+      .customjumbotron{
+        background-image: url('https://www.libraryvisit.org/wp-content/uploads/2021/02/Mars-planet-space.jpeg');
+      }
+
+  }
+
+  /* Small Devices, Tablets */
+  @media only screen and (min-width : 768px) {
+      .customjumbotron{
+        background-image: url('https://www.libraryvisit.org/wp-content/uploads/2021/02/Mars-planet-space.jpeg');
+      }
+  }
+
+  /* Medium Devices, Desktops */
+  @media only screen and (min-width : 992px) {
+      .customjumbotron{
+          background-image: url('https://www.libraryvisit.org/wp-content/uploads/2021/02/Mars-planet-space.jpeg');
+      }
+  }
+
+  /* Large Devices, Wide Screens */
+  @media only screen and (min-width : 1200px) {
+      .customjumbotron{
+          background-image: url('https://www.libraryvisit.org/wp-content/uploads/2021/02/Mars-planet-space.jpeg');
+      }
+  }
+</style>
